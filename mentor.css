@@ -1,0 +1,241 @@
+/* Marquee Container */
+/* Marquee Container */
+.card-ment {
+  text-align: center;
+  padding: 8px;
+  background: linear-gradient(145deg,#e1f8f8, #7cb3ff); /* Soft modern gradient */
+  border-radius: 12px 12px 12px 12px;
+ 
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 1px 5px;
+}
+
+/* Scrolling Text */
+.marquee-text {
+  color: #495057; /* Dark muted gray */
+  font-weight: 500;
+  animation: marquee 17s linear infinite;
+}
+
+/* Keyframes for Smooth Scrolling */
+@keyframes marquee {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+
+
+
+
+/* 🌟 Classic Modern Styling */
+/* 🌟 Modern Premium Body Styling */
+body {
+  font-family: 'Inter', sans-serif; /* Clean and modern sans-serif */
+  background: linear-gradient(to right, #eaedf3, #e3eaf3); /* Subtle premium gradient */
+  color: #333; /* Dark gray for readability */
+  margin: 0;
+  padding: 0;
+}
+
+
+/* 🌟 Classic About Us Title */
+.about-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #2c3e50;
+  padding: 20px 15px;
+  margin-top: 20px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 2px;
+}
+
+/* 🔥 Underline Effect */
+.about-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #b22222;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+/* 🌟 Navbar Styling */
+/* 🌟 Modern Glassmorphism Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.1); /* Subtle transparency */
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: #0077b6 !important; /* Muted deep blue */
+}
+.navbar-nav .nav-link:hover {
+  color: #495057 !important; /* Subtle dark hover */
+}
+
+
+
+/* 🌟 Search Button */
+.btn-outline-success {
+  border-radius: 20px;
+  border: 2px solid #0d1255;
+  color: #0d1255;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+  background: #252652;
+  color: #ffffff;
+  border-color: #252652;
+}
+
+/* 🌟 Mobile Navbar */
+.navbar-toggler {
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* 🌟 Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 8px 15px;
+    border-radius: 0;
+  }
+}
+
+
+.navbar-nav .nav-link {
+  font-weight: 600;
+  color: #2c3e50 !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #8e8e8e !important;
+}
+
+/* 🌟 Card Section - Ensuring Proper Layout */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center alignment */
+  gap: 30px; /* Spacing between cards */
+  padding: 40px 10px;
+}
+
+/* 🌟 Premium Student Card */
+.card {
+  width: 17rem;
+  border: none;
+  border-radius: 12px,12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: transparent;
+  box-shadow: 3px 3px 10px rgba(130, 78, 78, 0.08);
+  padding-bottom: 10px;
+}
+
+/* 🎩 Elegant Hover Effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* 🖼 Card Image - Now Fits Entirely */
+.card img {
+  width: 100%; /* Full width of card */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Ensure full fit without distortion */
+  transition: opacity 0.3s ease;
+}
+
+/* 🖼 Image Subtle Fade on Hover */
+.card img:hover {
+  opacity: 0.85;
+}
+
+/* 📜 Card Body */
+.card-body {
+  text-align: center;
+  padding: 8px;
+  background: linear-gradient(145deg,#e1f8f8, #7cb3ff); /* Soft modern gradient */
+  border-radius: 0px 0px 0px 0px;
+ 
+}
+
+/* 🖼 Subtle hover effect for depth */
+.card:hover .card-body {
+  background: linear-gradient(145deg, #ffffff, #ffffff);
+  transform: scale(1.02);
+}
+
+/* 🌟 Modern Card Text */
+.card-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #2c3e50;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+.card-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.5;
+}
+
+
+
+
+/* 📜 List Group Styling */
+.list-group-item {
+  font-size: 14px;
+  padding: 5px;
+  background: #d3f0f9;
+  border: none;
+  font-weight: 500;
+}
+
+/* 🔗 Links */
+.list-group-item a {
+  color: #000000;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.list-group-item a:hover {
+  text-decoration: underline;
+  color: #0022fe;
+}
+
+/* 🌟 Responsive Adjustments */
+@media (max-width: 1200px) {
+  .card-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 15rem;
+    margin: auto;
+  }
+}
